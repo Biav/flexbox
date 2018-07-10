@@ -1,0 +1,83 @@
+.cabecalhoPrincipal .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav, .rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+}
+
+.rodapePrincipal-contatoForm {
+    display: flex;
+    width: 25%;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 20%;
+    margin: 1%;
+}
+
+@media(max-width:780px){
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+    }
+
+    .cabecalhoPrincipal-titulo {
+        text-align: center;
+    }
+
+    .cabecalhoPrincipal-nav {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rodapePrincipal-patrocinadores-list li {
+        margin: 0 0 0 25px;
+    }
+
+    .rodapePrincipal-contatoForm{
+        width: auto;
+    }
+
+}
+
